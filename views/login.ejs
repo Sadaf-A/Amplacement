@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select User Type</title>
+    <link rel="stylesheet" href="/css/self.css">
+    <link rel="stylesheet" href="/css/selfMedia.css">
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: 'Lexend Deca', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #6B69E2;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <h1>Choose your user type</h1>
+        <form action="/login/redirect" method="GET">
+            <label>
+                <input type="radio" name="userType" value="student" required> Student
+            </label>
+            <label>
+                <input type="radio" name="userType" value="company" required> Company
+            </label>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+</body>
+
+</html>
